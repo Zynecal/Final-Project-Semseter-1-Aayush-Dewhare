@@ -26,9 +26,6 @@ response = requests.get(url, headers=headers)
 
 if response.status_code == 200:
     assignments = response.json()
-    print('Assignments:')
-
-    
 
 def newWindow():
     # create window
@@ -41,8 +38,8 @@ def newWindow():
     window.geometry('900x750')
     
     for assignment in assignments:
-        #print(f'Assignment Name: {assignment['name']}')
-        #print(f"Due Date: {assignment['due_at']}")
+        print(f"Assignment Name: {assignment['name']}")
+        print(f"Due Date: {assignment['due_at']}")
 
         assignmentName = (f"Assignment Name: {assignment['name']}")
         assignmentDueDate = (f"Due Date: {assignment['due_at']}")
