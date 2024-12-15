@@ -44,7 +44,7 @@ def newWindow():
         #print(f'Assignment Name: {assignment['name']}')
         #print(f"Due Date: {assignment['due_at']}")
 
-        assignmentName = (f'Assignment Name: {assignment['name']}')
+        assignmentName = (f"Assignment Name: {assignment['name']}")
         assignmentDueDate = (f"Due Date: {assignment['due_at']}")
         assignment_names.append(assignmentName)
 
