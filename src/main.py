@@ -45,7 +45,7 @@ def newWindow():
         assignmentDueDate = (f"Due Date: {assignment['due_at']}")
         assignment_names.append(assignmentName)
 
-        tk.Label(window, text=(assignmentName), font=("Arial", 16)).pack()
+        #tk.Label(window, text=(assignmentName), font=("Arial", 16)).pack()
 
     # execute tkinter
     window.mainloop()
