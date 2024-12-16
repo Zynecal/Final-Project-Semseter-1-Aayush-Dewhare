@@ -10,7 +10,7 @@ def newWindow():
 
     tk.Label(window, text="Title",font=("Arial", 16)).pack()
 
-    logo_img = PhotoImage(file="logo.png")
+    logo_img = PhotoImage(file="")
 
 
     window.mainloop()
