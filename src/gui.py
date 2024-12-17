@@ -1,5 +1,7 @@
 import tkinter as tk
 from tkinter import PhotoImage
+from tkinter import Label
+import os
 
 def newWindow():
 
@@ -8,10 +10,29 @@ def newWindow():
 
     window.title('TaskFlow - Interactive Homework Tracker')
 
-    tk.Label(window, text="Title",font=("Arial", 16)).pack()
+    title = tk.Label(
+        window, 
+        text="Assignment Tracker",
+        font=("Calibri", 30),
+        justify="left"
+    )
 
-    logo_img = PhotoImage(file="assets/logo.png")
+    title.pack(pady=10, padx=10, anchor="w")
+    title.pack(pady=75)
 
+    assignment_heading = tk.Label(
+        window, 
+        text="Assignments:",
+        font=("Calibri", 20),
+        justify="left",
+        fg ="red"
+    )
+
+    assignment_heading.pack(pady=10,padx=10, anchor="w")
+    assignment_heading.pack(pady=5)
+
+    #image_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'logo.png')
+    logo_img = PhotoImage(file = "logo.png")
 
     window.mainloop()
 
